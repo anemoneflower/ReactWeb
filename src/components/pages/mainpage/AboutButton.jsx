@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import '../../../styles/hoveringButton.css';
 // hoveringButton style importing.
+import '../../../styles/aboutBox.css';
 
 class AboutButton extends React.Component {
     constructor(props) {
@@ -37,12 +38,13 @@ class AboutButton extends React.Component {
         }
         
         return (
-			<div className="box">
-				<div className="boxTitle" onClick={this.openClose}>
+			<div className="box hoveringButton">
+                {/* see hoveringButton.css */}
+				<div className="" onClick={this.openClose}>
 					{buttonText}
 				</div>
 				{opened && (					
-					<div class="boxContent">
+					<div class="boxContent aboutBox">
 						{content}
 					</div>
 				)}
