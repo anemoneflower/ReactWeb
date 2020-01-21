@@ -1,10 +1,24 @@
-import React from 'react';
+import React from 'react'
+import { BrowserRouter as Router} from 'react-router-dom';
 
-export default function About() {
-    return (
-        <div>
-            <h1>About</h1>
-            <p>Hi we are include!</p>
-        </div>   
-    )
+
+class MainPage extends React.Component {
+    render(){
+        return (
+
+                <div>
+                    <React.Fragment>
+
+                        <div align="right">
+                        </div>
+                        {/* about box template */}
+                        <div align="center">
+                        </div>
+                        {/* about box template end */}
+                    </React.Fragment>
+                </div>
+        );
+    }
 }
+
+export default MainPage;

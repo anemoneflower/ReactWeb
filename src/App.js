@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 import MainPage from './components/pages/mainpage/MainPage'
+import EmailVerificationPage from './components/pages/email_verification/EmailVerificationPage'
+import SignInPage from './components/pages/signin/SignInPage'
 
 
 class App extends Component{
@@ -8,10 +10,12 @@ class App extends Component{
     return (
       <Router>
         <div className="App">
-          <div className="container">
-            {/* Justify Routes */}
-            <Route exact path="/" component={MainPage}></Route>
-          </div>
+              <Switch>
+                <Route exact path="/" component={MainPage}/>
+                <Route exact path="/email" component={EmailVerificationPage}/>
+                <Route exact path="/signin" component={SignInPage}/>
+                <Redirect path="*" to="/" />
+              </Switch>
         </div>
       </Router>
     );
