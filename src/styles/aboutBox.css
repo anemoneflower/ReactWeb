@@ -1,0 +1,8 @@
+.aboutBox{
+    width: 90%;
+    height: 1000px;
+    margin: auto;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #1AAB8A;
+}

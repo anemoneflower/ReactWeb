@@ -1,7 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router} from 'react-router-dom';
-import LogoBox from './LogoBox';
 import { Link } from 'react-router-dom'
+
+import LogoBox from './LogoBox';
+import AboutBox from './AboutBox';
+import AboutButton from './AboutButton';
 import VerificationBox from './VerificationBox';
 
 //these imports are just for template
@@ -23,7 +26,9 @@ class MainPage extends React.Component {
 
                         {/* about box template */}
                         <div align="center">
-                            <Button className="m-1">About</Button>
+                            <AboutButton title="About Include">
+                                <AboutBox />
+                            </AboutButton>
                         </div>
                         {/* about box template end */}
                     </React.Fragment>
