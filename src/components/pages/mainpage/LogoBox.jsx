@@ -11,10 +11,12 @@ function LogoBox(props) {
      */
     let{src, alt} = props
     return (
-        <img
-            src = {src}
-            alt = {alt}
-        />
+        <div style={{textAlign:"center"}}>
+            <img
+                src = {src}
+                alt = {alt}
+            />
+        </div>
     );
 }
 
