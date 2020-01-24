@@ -1,6 +1,6 @@
 // Click AboutButton to open and close AboutBox.
 
-import React, { Component } from 'react';
+import React from 'react';
 import '../../../styles/hoveringButton.css';
 // hoveringButton style importing.
 import '../../../styles/aboutBox.css';
