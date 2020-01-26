@@ -7,15 +7,28 @@ import BoardTableBox from './BoardTableBox';
 import BoardTitleBox from './BoardTitleBox';
 import SideNavBar from './SideNavBar';
 
+//axios is for loading sample database
+import axios from 'axios';
+
 
 class BoardPage extends React.Component {
-    render(){
-        return (
+    state = {
+        posts: []
+    }
 
+    //load sample database
+    componentDidMount(){
+        axios.get('http://jsonplaceholder.typicode.com/posts?_limit=10')
+            .then(res => this.setState({posts: res.data}))
+    }
+
+    render(){
+        console.log(this.state.posts);
+        return (
                 <div>
                     <React.Fragment>
                         <BoardTitleBox title="Notice"/>
-                        <BoardTableBox/>
+                        <BoardTableBox data={this.state.posts}/>
                         <SideNavBar/>
                     </React.Fragment>
                 </div>
