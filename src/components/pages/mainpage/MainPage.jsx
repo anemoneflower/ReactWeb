@@ -14,26 +14,7 @@ import {Button} from 'react-bootstrap';
 
 class MainPage extends React.Component {
     render(){
-        return (
-
-                <div>
-                    <React.Fragment>
-
-                        <div align="right">
-                            <VerificationBox/>
-                        </div>
-                        <LogoBox src='./../../../logo_simple.png' alt=""/>
-
-                        {/* about box template */}
-                        <div align="center">
-                            <AboutButton title="About Include">
-                                <AboutBox />
-                            </AboutButton>
-                        </div>
-                        {/* about box template end */}
-                    </React.Fragment>
-                </div>
-        );
+        
     }
 }
 
