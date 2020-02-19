@@ -1,8 +1,7 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
-
-
 
 .App-logo {
   height: 40vmin;
@@ -55,4 +54,20 @@
 
 .btn:hover{
   background: #666;
+}
+
+.background-main{
+  background: linear-gradient(#9db7e6, white);
+  /* background-color: rgb(106, 98, 210); */
+  /* width: 100%;
+  height: 100vh; */
+  width: 100%;
+  height: 100vh;
+  min-height : 100vh;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  /* background-color : red; */
 }
