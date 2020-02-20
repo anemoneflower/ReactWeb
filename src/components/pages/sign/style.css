@@ -1,3 +1,9 @@
+  .logoInclude {
+    max-width: 30%;
+    max-height: 30%;
+    display: block;
+    margin: 0px auto;
+  }
 
   .loginBox {
     width: 450px;
@@ -5,7 +11,7 @@
     text-align: left;
     position: relative;
     left: 50%;
-    height: 430px;
+    height: 550px;
     transform: translate(-50%, 20%);
     padding: 30px;
     /* border: 2px solid #9db7e4; */
@@ -19,12 +25,12 @@
   .text1{
     position: absolute;
     width:390px;
-    top:90px;
+    top:230px;
   }
 
   .text2{
     position: absolute;
-    top:170px;
+    top:300px;
     width:390px;
   }
 
@@ -34,35 +40,33 @@
   }
 
   .signInBox {
-    /* position: absolute; */
+    position: relative;
     text-align: center;
     margin: 5px 0 10px 0;
+    top: 12px;
   }
 
   .signInSubmit {
     position: relative;
     top: 150px;
-    /* height: 150px; */
-    /* width:390px; */
     margin: 20px 0 10px 0;
-    
   }
 
   .rememberMe {
     position: relative;
-    top: 155px;
+    top: 165px;
     margin: 20px 0 10px 0;  
   }
 
   .forgotPassword {
     position: relative;
-    top: 145px;
+    top: 147px;
     margin: 20px 0 10px 0;  
   }
 
   .copyright {
     position: relative;
-    top: 155px;
+    top: 120px;
     margin: 20px 0 10px 0;  
   }
   

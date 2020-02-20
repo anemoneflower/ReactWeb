@@ -10,12 +10,15 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import "./style.css";
+import logo from './../../../img/logo_original.png';
+
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
+        {/* link to mainpage */}
         Include KAIST
       </Link>{' '}
       {new Date().getFullYear()}
@@ -34,10 +37,11 @@ const SignInForm = ({
   return (
     <div className="loginBox">
       <CssBaseline/>
+      <img src={logo} alt="logo" style={{maxWidth: 135}} className="logoInclude"/>
       <div className="signInBox">
-        <Typography component="h1" variant="h4">
-          <Box fontFamily='Roboto' >
-            SIGN IN
+        <Typography component="h1" style={{fontSize: 30}}>
+          <Box fontFamily='Roboto Mono'>
+            Sign in to #include
           </Box>
         </Typography>
       </div>
@@ -45,7 +49,7 @@ const SignInForm = ({
           <div className='text1'>
             <TextField
               fullWidth
-              variant = "outlined"
+              variant = "standard"
               margin="normal"
               id="email"
               label = "Email Address"
@@ -64,7 +68,7 @@ const SignInForm = ({
                 // borderColor:'#ced4da'
             }}
               type = {type}
-              variant = "outlined"
+              variant = "standard"
               margin="normal"
               fullWidth
               id="password"
@@ -84,14 +88,15 @@ const SignInForm = ({
           />
           </div>
           <div className="signInSubmit">
-          <Button size="medium" style={{
+          <Button size="large" style={{
                 // backgroundColor: "rgb(106, 98, 210)"
             }}
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
-            label="submit">
+            label="submit"
+            style={{fontSize: "18px"}}>
               Sign In 
           </Button>
           </div>
