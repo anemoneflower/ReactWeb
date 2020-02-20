@@ -61,6 +61,7 @@ const SignInForm = ({
               error = {errors.email}
               helperText={errors.email}
             />
+            {/* change input fontcolor into red if invalid. */}
           </div>
           <div className='text2'>
             <TextField
