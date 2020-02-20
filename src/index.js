@@ -6,6 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import './index.css';
 import App from './App';
+import { createGlobalStyle } from 'styled-components';
 
 //import * as serviceWorker from './serviceWorker';
 
