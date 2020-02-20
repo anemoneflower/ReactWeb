@@ -11,7 +11,7 @@
     text-align: left;
     position: relative;
     left: 50%;
-    height: 550px;
+    height: 570px;
     transform: translate(-50%, 20%);
     padding: 30px;
     /* border: 2px solid #9db7e4; */
@@ -60,13 +60,13 @@
 
   .forgotPassword {
     position: relative;
-    top: 147px;
+    top: 150px;
     margin: 20px 0 10px 0;  
   }
 
   .copyright {
     position: relative;
-    top: 120px;
+    top: 125px;
     margin: 20px 0 10px 0;  
   }
   
