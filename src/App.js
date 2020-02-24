@@ -5,6 +5,7 @@ import EmailVerificationPage from './components/pages/email_verification/EmailVe
 // import SignInPage from './components/pages/signin/SignInPage'
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import SignInPage from './components/pages/sign/SignInPage'
+import BoardPage from './components/pages/boardpage/BoardPage'
 import './App.css';
 
 class App extends Component{
@@ -20,6 +21,7 @@ class App extends Component{
                 {/* <Route exact path="/signin" component={SignInPage}/> */}
                 {/*<Route exact path="/signup" component={SignUpPage}/> */}
                 <Route exact path="/signin" component={SignInPage}/>
+                <Route exact path="/board" component={BoardPage}/>
                 <Redirect path="*" to="/" />
               </Switch>
       </Router>  
