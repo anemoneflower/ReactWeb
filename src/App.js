@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 import MainPage from './components/pages/mainpage/MainPage'
 import EmailVerificationPage from './components/pages/email_verification/EmailVerificationPage'
-// import SignInPage from './components/pages/signin/SignInPage'
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import SignInPage from './components/pages/sign/SignInPage'
+import SignInPage from './components/pages/signin/SignInPage'
 import './App.css';
 
 class App extends Component{
