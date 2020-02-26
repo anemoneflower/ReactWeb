@@ -14,18 +14,19 @@ class MainPage extends React.Component {
             <div>
                 <React.Fragment>
 
-                    <div align="right">
-                        <h1>verification box?</h1>
-                    </div>
 
                     {/* about box template */}
                     <div align="center">
                         <Button className="m-1">About</Button>
                     </div>
                     {/* about box template end */}
+                    
+                    <div align="right">
+                        <h1>CertificateButton?</h1>
+                    </div>
                 </React.Fragment>
             </div>
-    );
+        );
     }
 }
 
