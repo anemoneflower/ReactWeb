@@ -6,15 +6,17 @@ th.react-bs-table-expand-cell>div {
 }
 
 .react-bs-table-container .react-bs-table-search-form {
-    margin-bottom: 0
+    margin-bottom: 10px;
 }
 
 .react-bs-table-bordered {
-    border       : 1px solid #ddd;
-    border-radius: 5px
+    /* 제일 바깥 테두리 디자인*/
+    border       : 2px solid #9c9a95;
+    border-radius: 10px
 }
 
 .react-bs-table table {
+    /* 맨 윗줄 & 그 아래 데이터묶음 각각*/
     margin-bottom: 0;
     table-layout : fixed
 }
@@ -36,13 +38,15 @@ th.react-bs-table-expand-cell>div {
 
 .react-bs-container-footer,
 .react-bs-container-header {
+    /* 맨 윗줄 */
     overflow: hidden;
-    width   : 100%
+    width   : 70%
 }
 
 .react-bs-container-body {
+    /* 데이터 묶음 */
     overflow: auto;
-    width   : 100%
+    width   : 70%
 }
 
 .react-bootstrap-table-page-btns-ul {
@@ -148,7 +152,7 @@ th.react-bs-table-expand-cell>div {
 .react-bs-table .react-bs-container-header>table>thead>tr>th .number-filter-input {
     margin-left: 5px;
     float      : left;
-    width      : calc(100% - 67px - 5px)
+    width      : calc(70% - 67px - 5px)
 }
 
 .react-bs-table .react-bs-container-footer>table>thead>tr>th .date-filter-comparator,

@@ -5,7 +5,7 @@ import React from 'react'
 
 import BoardTableBox from './BoardTableBox';
 import BoardTitleBox from './BoardTitleBox';
-import SideNavBar from './SideNavBar';
+// import SideNavBar from './SideNavBar';
 
 //axios is for loading sample database
 import axios from 'axios';
@@ -29,7 +29,6 @@ class BoardPage extends React.Component {
                     <React.Fragment>
                         <BoardTitleBox title="Notice"/>
                         <BoardTableBox data={this.state.posts}/>
-                        <SideNavBar/>
                     </React.Fragment>
                 </div>
         );
